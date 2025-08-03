@@ -54,5 +54,5 @@ proc binomial_cache_row i {
 
 func binomial(n, k) {
     binomial_cache_row $n;
-    return binomial_cache[$k];
+    return binomial_cache[$k - 1];
 }
